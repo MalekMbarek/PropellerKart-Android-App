@@ -2,8 +2,9 @@
 
 An Android app that turns a phone into a **tilt controller** for a propeller kart. It reads the phone's **accelerometer**, packs the values into a short text frame, and streams them over **Bluetooth (RFCOMM / SPP)** to a PC every **50 ms**. A horn button is included.
 
-<!-- TODO: add a photo or GIF of the app and the kart, e.g. docs/demo.gif -->
-<!-- ![Demo](docs/demo.gif) -->
+
+https://github.com/user-attachments/assets/d2c6d2ef-9026-4e28-a514-d4f9f593f866
+
 
 ## Features
 

@@ -34,15 +34,14 @@ Each frame is plain ASCII, terminated by a carriage return (`CR`, `0x0D`):
 ## System overview
 
 ```
-Phone (this app)  ──Bluetooth SPP, 50 ms frames──►  PC  ──►  TODO: how the PC drives the kart
+Phone (this app)  ──Bluetooth SPP, 50 ms frames──►  PC  ──►  the PC drives the kart
    accelerometer                                    (serial / microcontroller / ...)
 ```
 
-<!-- TODO: describe the receiving side and the kart hardware: PC program, microcontroller, motors/propeller, how the frame values map to speed and steering. -->
 
 ## Requirements
 
-- Android phone with Bluetooth and an accelerometer (TODO: minimum Android version, see `minSdk` in `app/build.gradle.kts`)
+- Android phone with Bluetooth and an accelerometer
 - **Android Studio** (Gradle project, Java)
 - A PC with Bluetooth, paired with the phone, and a program that listens on an incoming Bluetooth serial (SPP) port
 
@@ -82,15 +81,9 @@ app/src/main/
 - Runtime permission handling flow for Android 12+
 - Reconnect automatically after a lost connection
 
-## Context
-
-<!-- TODO: e.g. "School project for <course>, <school>, <year>." -->
 
 ## Authors
 
 - Malek Mbarek
-- Meryeme TODO: full name
+- Meryeme El Janati
 
-## Credits
-
-TODO: mention anything reused (libraries, tutorials, hardware kit).

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Propeller Kart"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non connecté"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#D32F2F"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connecter au PC"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valeurs de l'accéléromètre :"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x = 0.00"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="y = 0.00"
+            android:textSize="18sp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textZ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="z = 0.00"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contrôle de niveau :"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="20dp">
+
+            <ProgressBar
+                android:id="@+id/progressVertical"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:max="20"
+                android:progress="10"
+                android:rotation="270"
+                android:layout_gravity="center"
+                android:progressTint="#FFC107" />
+
+            <ProgressBar
+                android:id="@+id/progressHorizontal"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:max="20"
+                android:progress="10"
+                android:layout_gravity="center"
+                android:progressTint="#42A5F5" />
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/btnKlaxon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Klaxon : INACTIF (b=0)"
+            android:backgroundTint="#78909C"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSendToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Démarrer l'envoi auto"
+            android:backgroundTint="#26A69A"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trame envoyée :"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/textTrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:padding="12dp"
+            android:background="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
